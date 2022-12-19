@@ -1,0 +1,59 @@
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+    @apply text-2xl;
+}
+
+h3 {
+    @apply text-lg;
+}
+
+table {
+    @apply table-auto w-full;
+}
+
+table>thead>tr {
+    @apply bg-blue-500 text-white border-b;
+}
+th {
+    @apply px-2 py-1;
+}
+
+table>tbody>tr {
+    @apply border border-blue-100;
+}
+td {
+    @apply px-2 py-1;
+}
+table>tbody>tr:nth-child(2n) {
+    @apply bg-blue-50;
+}
+table>tbody>tr:nth-child(2n+1) {
+    @apply bg-white;
+}
+
+.bt-small {
+    @apply text-xs rounded;
+}
+.bt-show {
+    @apply border bg-cyan-500 p-1;
+}
+.bt-edit {
+    @apply border bg-yellow-500 p-1;
+}
+.bt-delete {
+    @apply border bg-red-500 p-1;
+}
+
+input[readonly]{
+    @apply bg-yellow-100;
+}
+textarea:read-only {
+    @apply bg-yellow-100;
+}
+
+
